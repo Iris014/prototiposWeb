@@ -1,32 +1,93 @@
-<DOCTYPE html>
+<!DOCTYPE html>
     <html lang="es">
+
     <head>
         <meta charset="UTF-8">
-        <meta name="" viewport" content="width=device-width, initial-scale=1.8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Formularios HTML</title>
     </head>
+
     <body>
         <header>
             <h1> Formularios HTML -Ejemplos</h1>
-        <hr>
+            <hr>
         </header>
         <main>
             <h2>Formulario de registro</h2>
-            <p>Completa los siguientes datos</p>
-            <form> <!-- Etiqueta para crear un formulario--></form>
+            <p>Completa los siguientes datos:</p>
+            <form> <!-- Etiqueta para crear un formulario-->
                 <label> Nombre:</label> <!-- Etiqueta que describe al campo-->
-                <input type="text" name="nombre" placeholder="Ejemplo: Diego Fernández"> 
+                <input type="text" name="nombre" placeholder="Ejemplo: Diego Fernández">
                 <br> <br>
-                <label> Correo electronico:</label>
-                <input type="email" name="correo" placeholder="Ejemplo:diegoempresa.cl"> 
-
+                <label>Correo electronico:</label>
+                <input type="email" name="correo" placeholder="Ej:diegoempresa.cl">
+                <br> <br>
+                <label>Contraseña:</label>
+                <input type="password" name="password">
+                <br> <br>
+                <label>Edad:</label>
+                <input type="number" name="Edad"><!-- Admite sólo números-->
+                <label>Fecha de nacimiento:</label>
+                <input type="date" name="FechaNac"><!-- Formato fecha-->
+                <br> <br>
+                <label>Género:</label>
+                <input type="radio" name="genero" value="masculino"> <!--Elemento de selección única-->
+                Masculino
+                <input type="radio" name="genero" value="femenino">
+                Femenino<br>
+                <br><br>
+                <label>Intereses:</label><br>
+                <input type="checkbox" name="intereses" value="musica"> 
+                Música<br>
+                <input type="checkbox" name="intereses" value="deportes"> 
+                Deportes<br>
+                <input type="checkbox" name="intereses" value="peliculas">
+                Peliculas
+                <br><br>
+                <label>Ciudad:</label><br>
+                <select name="ciudad">
+                    <option>Valparaíso</option>
+                    <option>Santiago</option>
+                    <option>Coquimbo</option>
+                    <option>Arica</option>
+                </select>
+                <br><br>
+                <label>Comentarios:</label><br>
+                <textarea name="comentarios" rows="4" cols="30"></textarea> <!--Elemento de texto largo con filas y columnas-->
+                <br><br>
+                <label>Subir archivos:</label>
+                <input type="file" name="archivo"> <!-- Seleccionar archivo total-->
+                <br><br>
+                <label> Color favorito</label> <!--Seleccionar un color-->
+                <input type="color" name="color">
+                <br><br>
+                <label>Nivel de satisfación</label><br>
+                <input type="range" name="satisfaccion" min="1" max="7">
+                <br><br>
+                <input type="submit" value="Enviar"><!--Botón para enviar formulario-->
+                <input type="reset" value="Limpiar"> <!--Botón para limpiar formulario-->
             </form>
+            <!--Creación de tabla con datos-->
+            <h2>Tabla de usuarios</h2>
+            <table border="1">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Edad</th>
+                </tr>
+                <tr>
+                    <th>Sofia</th>
+                    <th>sofia@liceo.cl</th>
+                    <th>14</th>
+                </tr>
+                <tr>
+                    <th>Alex</th>
+                    <th>alex@alumnos.colegio.cl</th>
+                    <th>16</th>
+                </tr>
+            </table>
+            
         </main>
-
-
-
-
-        <meta name="author" content="Iris C.V">
-        <link rel="stylesheet" href="static/css/style.css">
     </body>
+
     </html>
